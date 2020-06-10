@@ -1,0 +1,326 @@
+body {
+    background-color: #645dba;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    padding: 3%;   
+    background-color: #ffffff;
+    box-shadow: 0px 0px 88px 0px rgba(0, 0, 0, 0.3607843137254902);
+}
+/**
+ * codigo da navegação da página.
+ */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 35px;
+}
+
+nav .nav-wrapper {
+    width: 50%;
+}
+nav .nav-wrapper ul {
+    display: flex;
+    justify-content: space-around;
+} 
+nav ul li a {
+    color: #686262;
+    font-size: 20px;
+}
+nav ul .button-sign {
+    background-color: #c4c4f8;
+    padding: 10px 24px;
+    border-radius: 32px;
+}
+nav .hidden {
+    display: none;
+}
+
+/**
+ * codigo da parte do conteudo da página.
+ */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+main .conteudo{
+    align-self: center;
+    width: 50%;
+    height: auto;
+}
+main .conteudo .digital{
+    font-size: 120px;
+    color: #123b4f;
+}
+main .conteudo .marketing{
+    font-size: 50px;
+    color: #febc48;
+    margin-bottom: 40px;  
+}
+
+main .conteudo .texto {
+    color:rgb(194, 194, 194);
+    font-size: 19px;
+    margin-bottom: 13px;
+}
+
+main .conteudo .margin a {
+    background-color: #c4c4f8;
+    width: 100px;
+    margin-top: 200px;
+    padding: 10px 24px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+}
+main .conteudo .margin {
+    margin-top: 150px;
+}
+
+img{
+    width: 65%;
+}
+/**
+ * css da parte do rodapé.
+ */
+
+footer{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin: 50px 0;
+}
+footer img {
+    width: 3%;
+}
+
+/**
+ * responsividade.
+ */
+@media screen and (max-width: 1450px) {
+    main .conteudo .texto {
+        font-size: 16px;
+    }
+    img {
+        width: 55%;
+     }
+     main .conteudo .margin{
+        margin-top: 100px;
+    }
+ }
+
+@media screen and (max-width: 1250px) {
+    main .conteudo .digital{
+        font-size: 100px;
+    }
+    main .conteudo .marketing{
+        font-size: 43px;
+    }
+    main .conteudo .margin{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    nav .nav-wrapper {
+        width: 70%;
+    }
+    main .conteudo .margin{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .container{
+        width: 90%;
+    }
+    img{
+        width: 55%;
+        height: 55%;
+    }
+    footer {
+        margin: 25px 0 ;
+    }
+    main .conteudo .margin{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    main .conteudo .marketing {
+        font-size: 35px;
+    } 
+    main .conteudo .digital {
+        font-size: 80px;
+    }
+    footer img {
+        width: 5%;
+    }
+    main .conteudo .margin{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    img{
+        width: 50%;
+        height: 40%;
+    }
+} 
+
+@media screen and (max-width: 700px) {
+    main {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    footer img {
+        width: 10%;
+        margin-left: 0;
+    }
+    main .conteudo {
+        align-self: flex-start;
+        width: 100%;
+    }
+    img{
+        width: 95%;
+        margin: 10px 0px 0px 10px;
+    }
+    main .conteudo .digital {
+        font-size: 95px;
+    }
+    main .conteudo .marketing{
+        font-size: 40px;
+    }
+    main .conteudo .texto {
+        font-size: 18px;
+    }
+    main .conteudo .margin{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    nav .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #fff;
+        opacity: 0;
+        transition: all 0.2s ease;
+    }
+
+    nav .nav-wrapper ul {
+        position: absolute;
+        flex-direction: column;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 50%;
+    }
+    nav .nav-wrapper ul li{
+        width: 100%;
+        text-align: center;
+    }
+    nav .nav-wrapper ul li:nth-child(1) a {
+        transition-delay: 0.2s;
+    }
+    nav .nav-wrapper ul li:nth-child(2) a {
+        transition-delay: 0.3s;
+    }
+    nav .nav-wrapper ul li:nth-child(3) a {
+        transition-delay: 0.4s;
+    }
+    nav .nav-wrapper ul li:nth-child(4) a {
+        transition-delay: 0.5s;
+    }
+    nav .nav-wrapper ul li:nth-child(5) a {
+        transition-delay: 0.6s;
+    }
+    nav .nav-wrapper ul li:nth-child(6) a {
+        transition-delay: 0.7s;
+    }
+
+    nav .nav-wrapper ul li:not(:first-child) {
+        margin-left: 0;
+    }
+    nav .nav-wrapper ul li a{
+        padding: 10px 24px;
+        opacity: 0;
+        margin-bottom: 50px;
+        color: #686262;
+        letter-spacing: 1.2px;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;
+    }
+    nav .nav-btn {
+        right: 10px;
+        top: 60px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index:9999;
+        border-radius: 50%;
+    }
+
+    nav .nav-btn i {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #000;
+        border-radius: 2px;
+        margin-left: 14px;
+    }
+    nav .nav-btn i:nth-child(2){
+        margin-top: 4px;
+        opacity: 1;
+    }
+    nav .nav-btn i:nth-child(3){
+        margin-top: 4px;
+    }
+
+} 
+
+#nav:checked + .nav-btn {
+    transform: rotate(45deg);
+} 
+
+#nav:checked + .nav-btn i {
+    background: #000;
+    transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-btn i:nth-child(1) {
+    transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + .nav-btn i:nth-child(2) {
+    opacity: 0;
+}
+#nav:checked + .nav-btn i:nth-child(3) {
+    transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-wrapper {
+    z-index: 9990;
+    opacity: 1;
+}
+
+#nav:checked ~ .nav-wrapper ul li a {
+    opacity: 1;
+    transform: translateX(0);
+}
